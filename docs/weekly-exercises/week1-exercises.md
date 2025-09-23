@@ -22,9 +22,9 @@ Personalize the main title in `src/pages/Index.tsx` to include your name.
 4. Save and observe the changes in the preview
 
 ### Success Criteria
-- [ ] Title displays your personal name
-- [ ] Styling remains unchanged
-- [ ] No console errors appear
+- [X] Title displays your personal name
+- [X] Styling remains unchanged
+- [X] No console errors appear
 
 ### Learning Focus
 Understanding JSX and how React renders content.
@@ -45,9 +45,9 @@ Add your own custom subtitle below the main description.
 4. Make it personal! Example: "Built by [Your Name] - Future Data Scientist"
 
 ### Success Criteria
-- [ ] New subtitle appears below the main description
-- [ ] Uses consistent styling with existing text
-- [ ] Appears properly centered and styled
+- [X] New subtitle appears below the main description
+- [X] Uses consistent styling with existing text
+- [X] Appears properly centered and styled
 
 ### Learning Focus
 JSX structure and CSS class application.
@@ -63,8 +63,11 @@ Examine how the `DataUpload` component receives and uses props.
 
 ### Investigation Questions
 1. What props does `DataUpload` expect? (Check the interface)
+   - Based on the interface, DataUpload only expects the prop onDataLoad, which is a function that takes data (array of DataRow objects), fileName (string representing the name of the file), and it returns nothing (void).
 2. How is the `onDataLoad` function passed from parent to child?
+   - The parent creates a function named handleDataLoad that knows how to use the CSV data. From there, the parent passes it down as onDataLoad. The child function, DataUpload, calls that function once the parsing is done.
 3. What happens when you upload a CSV file?
+   - When a CSV file is uploaded, the application reads the file, registers the comma-separated data as rows & columns, the processes the data according to the application.
 
 ### Steps
 1. Open `src/components/DataUpload.tsx`
@@ -73,9 +76,9 @@ Examine how the `DataUpload` component receives and uses props.
 4. Look at how it's called in `Index.tsx` (line 121)
 
 ### Success Criteria
-- [ ] Can identify the prop interface
-- [ ] Understand the data flow from child to parent
-- [ ] Can explain what `onDataLoad` does
+- [X] Can identify the prop interface
+- [X] Understand the data flow from child to parent
+- [X] Can explain what `onDataLoad` does
 
 ### Learning Focus
 React props, interfaces, and parent-child communication.
@@ -90,20 +93,23 @@ React props, interfaces, and parent-child communication.
 Analyze the state management in the main `Index` component.
 
 ### Investigation Checklist
-- [ ] Identify all `useState` hooks in `Index.tsx`
-- [ ] Understand what data each state variable stores
-- [ ] Trace how state changes when a file is uploaded
-- [ ] Find where the conditional rendering happens (data vs. no data)
+- [X] Identify all `useState` hooks in `Index.tsx`
+- [X] Understand what data each state variable stores
+- [X] Trace how state changes when a file is uploaded
+- [X] Find where the conditional rendering happens (data vs. no data)
 
 ### Questions to Answer
 1. What are the two main pieces of state being managed?
+   - The two main pieces of state being managed are DataRow[] (Stores uploaded data), and string (Remembers file name).
 2. What triggers the state to change?
+   - The parent's event handler triggers the state to change; when a user uploads a CSV file, DataUpload parses it, calls onDataLoad, which updates state in the parent.
 3. How does the UI change based on state?
+   - The UI changes based on state (data & fileName), triggers handleDataLoad when the CSV file uploads, and switches from upload screen to dashboard screen.
 
 ### Success Criteria
-- [ ] Can list all state variables and their purposes
-- [ ] Understand the conditional rendering logic
-- [ ] Can predict UI changes based on state changes
+- [X] Can list all state variables and their purposes
+- [X] Understand the conditional rendering logic
+- [X] Can predict UI changes based on state changes
 
 ### Learning Focus
 React hooks, state management, and conditional rendering.
@@ -114,7 +120,7 @@ React hooks, state management, and conditional rendering.
 
 ### Question 1
 What does JSX stand for and why is it useful?
-- [ ] A. JavaScript XML - allows HTML-like syntax in JavaScript
+- [X] A. JavaScript XML - allows HTML-like syntax in JavaScript
 - [ ] B. JavaScript Extension - adds new features to JavaScript  
 - [ ] C. Java Syntax Extension - connects Java and JavaScript
 - [ ] D. JSON XML - converts between data formats
@@ -122,14 +128,14 @@ What does JSX stand for and why is it useful?
 ### Question 2
 In React, what is a "prop"?
 - [ ] A. A CSS property for styling components
-- [ ] B. Data passed from parent component to child component
+- [X] B. Data passed from parent component to child component
 - [ ] C. A JavaScript function that returns HTML
 - [ ] D. A file that contains component code
 
 ### Question 3
 What happens when you call a `setState` function in React?
 - [ ] A. The component immediately re-renders
-- [ ] B. The component schedules a re-render for the next cycle
+- [X] B. The component schedules a re-render for the next cycle
 - [ ] C. The entire page refreshes
 - [ ] D. Nothing happens until you manually refresh
 
@@ -165,9 +171,13 @@ Component creation, styling, and layout management.
 
 ## 📝 Reflection Questions
 1. What was the most challenging part of today's exercises?
+   - The footer was definitely the most challenging part of all the exercises.
 2. Which concept (JSX, props, state) do you want to explore more?
+   - I'd like to explore more into JSX.
 3. How comfortable do you feel reading existing React code?
+   - Comfortable enough, I'd say.
 4. What questions do you have about the project structure?
+   - No, no questions.
 
 ---
 
