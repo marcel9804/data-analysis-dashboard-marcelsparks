@@ -22,9 +22,15 @@ Personalize the main title in `src/pages/Index.tsx` to include your name.
 4. Save and observe the changes in the preview
 
 ### Success Criteria
+<<<<<<< HEAD
 - [X] Title displays your personal name
 - [X] Styling remains unchanged
 - [X] No console errors appear
+=======
+- [ ] Title displays your personal name
+- [ ] Styling remains unchanged
+- [ ] No console errors appear
+>>>>>>> upstream/main
 
 ### Learning Focus
 Understanding JSX and how React renders content.
@@ -45,9 +51,15 @@ Add your own custom subtitle below the main description.
 4. Make it personal! Example: "Built by [Your Name] - Future Data Scientist"
 
 ### Success Criteria
+<<<<<<< HEAD
 - [X] New subtitle appears below the main description
 - [X] Uses consistent styling with existing text
 - [X] Appears properly centered and styled
+=======
+- [ ] New subtitle appears below the main description
+- [ ] Uses consistent styling with existing text
+- [ ] Appears properly centered and styled
+>>>>>>> upstream/main
 
 ### Learning Focus
 JSX structure and CSS class application.
@@ -63,11 +75,16 @@ Examine how the `DataUpload` component receives and uses props.
 
 ### Investigation Questions
 1. What props does `DataUpload` expect? (Check the interface)
+<<<<<<< HEAD
    - Based on the interface, DataUpload only expects the prop onDataLoad, which is a function that takes data (array of DataRow objects), fileName (string representing the name of the file), and it returns nothing (void).
 2. How is the `onDataLoad` function passed from parent to child?
    - The parent creates a function named handleDataLoad that knows how to use the CSV data. From there, the parent passes it down as onDataLoad. The child function, DataUpload, calls that function once the parsing is done.
 3. What happens when you upload a CSV file?
    - When a CSV file is uploaded, the application reads the file, registers the comma-separated data as rows & columns, the processes the data according to the application.
+=======
+2. How is the `onDataLoad` function passed from parent to child?
+3. What happens when you upload a CSV file?
+>>>>>>> upstream/main
 
 ### Steps
 1. Open `src/components/DataUpload.tsx`
@@ -76,9 +93,15 @@ Examine how the `DataUpload` component receives and uses props.
 4. Look at how it's called in `Index.tsx` (line 121)
 
 ### Success Criteria
+<<<<<<< HEAD
 - [X] Can identify the prop interface
 - [X] Understand the data flow from child to parent
 - [X] Can explain what `onDataLoad` does
+=======
+- [ ] Can identify the prop interface
+- [ ] Understand the data flow from child to parent
+- [ ] Can explain what `onDataLoad` does
+>>>>>>> upstream/main
 
 ### Learning Focus
 React props, interfaces, and parent-child communication.
@@ -93,6 +116,7 @@ React props, interfaces, and parent-child communication.
 Analyze the state management in the main `Index` component.
 
 ### Investigation Checklist
+<<<<<<< HEAD
 - [X] Identify all `useState` hooks in `Index.tsx`
 - [X] Understand what data each state variable stores
 - [X] Trace how state changes when a file is uploaded
@@ -110,6 +134,22 @@ Analyze the state management in the main `Index` component.
 - [X] Can list all state variables and their purposes
 - [X] Understand the conditional rendering logic
 - [X] Can predict UI changes based on state changes
+=======
+- [ ] Identify all `useState` hooks in `Index.tsx`
+- [ ] Understand what data each state variable stores
+- [ ] Trace how state changes when a file is uploaded
+- [ ] Find where the conditional rendering happens (data vs. no data)
+
+### Questions to Answer
+1. What are the two main pieces of state being managed?
+2. What triggers the state to change?
+3. How does the UI change based on state?
+
+### Success Criteria
+- [ ] Can list all state variables and their purposes
+- [ ] Understand the conditional rendering logic
+- [ ] Can predict UI changes based on state changes
+>>>>>>> upstream/main
 
 ### Learning Focus
 React hooks, state management, and conditional rendering.
@@ -120,7 +160,11 @@ React hooks, state management, and conditional rendering.
 
 ### Question 1
 What does JSX stand for and why is it useful?
+<<<<<<< HEAD
 - [X] A. JavaScript XML - allows HTML-like syntax in JavaScript
+=======
+- [ ] A. JavaScript XML - allows HTML-like syntax in JavaScript
+>>>>>>> upstream/main
 - [ ] B. JavaScript Extension - adds new features to JavaScript  
 - [ ] C. Java Syntax Extension - connects Java and JavaScript
 - [ ] D. JSON XML - converts between data formats
@@ -128,14 +172,22 @@ What does JSX stand for and why is it useful?
 ### Question 2
 In React, what is a "prop"?
 - [ ] A. A CSS property for styling components
+<<<<<<< HEAD
 - [X] B. Data passed from parent component to child component
+=======
+- [ ] B. Data passed from parent component to child component
+>>>>>>> upstream/main
 - [ ] C. A JavaScript function that returns HTML
 - [ ] D. A file that contains component code
 
 ### Question 3
 What happens when you call a `setState` function in React?
 - [ ] A. The component immediately re-renders
+<<<<<<< HEAD
 - [X] B. The component schedules a re-render for the next cycle
+=======
+- [ ] B. The component schedules a re-render for the next cycle
+>>>>>>> upstream/main
 - [ ] C. The entire page refreshes
 - [ ] D. Nothing happens until you manually refresh
 
@@ -171,6 +223,7 @@ Component creation, styling, and layout management.
 
 ## 📝 Reflection Questions
 1. What was the most challenging part of today's exercises?
+<<<<<<< HEAD
    - The footer was definitely the most challenging part of all the exercises.
 2. Which concept (JSX, props, state) do you want to explore more?
    - I'd like to explore more into JSX.
@@ -178,10 +231,19 @@ Component creation, styling, and layout management.
    - Comfortable enough, I'd say.
 4. What questions do you have about the project structure?
    - No, no questions.
+=======
+2. Which concept (JSX, props, state) do you want to explore more?
+3. How comfortable do you feel reading existing React code?
+4. What questions do you have about the project structure?
+>>>>>>> upstream/main
 
 ---
 
 ## 🔗 Additional Resources
 - [React Documentation - Components and Props](https://react.dev/learn/passing-props-to-a-component)
 - [React Documentation - State](https://react.dev/learn/state-a-components-memory)
+<<<<<<< HEAD
 - [JSX Introduction](https://react.dev/learn/writing-markup-with-jsx)
+=======
+- [JSX Introduction](https://react.dev/learn/writing-markup-with-jsx)
+>>>>>>> upstream/main
